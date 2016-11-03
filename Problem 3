@@ -9,25 +9,24 @@
 	//Create linked list for odd factors.
 	//Create linked list for prime factors.
 	//How will I reference the largest prime factor? End pointer for prime factor linked list[pass by value].
-	
+
 	//Find all factors of 600851475143
 	//   Eliminate even factors
 	//   Store in linked list for factors.
 
 	//For all odd factors - ODD ENFORCED IN FACTOR FINDER
 	//   Decide if target factor is prime or not
-	//      PRIME COMPUTATION:
-	//         BOOLEAN Prime = true;
-	//         Modulo target factor by every integer > 2 && <= (target factor/2) truncated
-	//            if result = 0[NONPRIME]
-	//               Prime = false;
-	//               integer = target factor/2 + 1 [BREAK]
-	//            
-	//               
-	//         
-	//         If Prime = true: Store target factor in Prime linked list
-	//         
-	//   Increment target number by 2 and repeat
+	//   PRIME COMPUTATION:
+	//   While not at end pointer of target factor linked list
+	//      BOOLEAN Prime = true;
+	//      Modulo target factor value by every integer > 2 && <= (target factor/2) truncated
+	//         if result = 0[NONPRIME]
+	//            Prime = false;
+	//            integer = target factor/2 + 1 [BREAK]
+	//      if Prime = true: Store target factor in Prime linked list
+	//      Next target factor, repeat.
+	//   Output: end pointer value of prime linked list
+
 
 
 #include <iostream>
@@ -40,7 +39,7 @@ int main() {
 	const int one = 1;
 	int itself;
 	//Computations
-	
+
 	//Output
 
 	//Program end
