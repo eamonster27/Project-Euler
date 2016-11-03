@@ -36,8 +36,7 @@ using namespace std;
 
 int main() {
 	//Variables
-	const int one = 1;
-	int itself;
+	
 	//Computations
 
 	//Output
